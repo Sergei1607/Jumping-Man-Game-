@@ -117,7 +117,7 @@ while True:
     
     # increasing the gravity 
     player_gravity += 1
-    print(player_rect.y)
+    
     
     #applying gravity to the player
     
@@ -152,8 +152,8 @@ while True:
     # .colliderect will return a true if there is a collision 
     # between surfaces
     
-    # if player_rect.colliderect(snail_rect):
-    #     print("Collision")
+    if player_rect.colliderect(snail_rect):
+        print("Collision")
     
     # adding colision with the mouse
     # .collidepoint
@@ -192,6 +192,6 @@ while True:
     
     # here we are saying that the while lop should not run more than 60 times 
     # per second
-    clock.tick(20)
+    clock.tick(60)
     
     
